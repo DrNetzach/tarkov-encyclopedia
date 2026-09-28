@@ -1,0 +1,78 @@
+site_name: 逃离塔科夫百科
+site_description: 七卷结构化数据参考 —— 世界历史、派系、商人、Boss、地图、词条、剧情
+site_author: B站 UID:81597119
+site_url: https://tarkov-encyclopedia-site.pages.dev/
+repo_url: https://github.com/DrNetzach/tarkov-encyclopedia
+repo_name: DrNetzach/tarkov-encyclopedia
+
+theme:
+  name: material
+  language: zh
+  icon:
+    logo: material/book-open-page-variant
+  font:
+    text: Noto Sans SC
+    code: JetBrains Mono
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 切换暗黑模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 切换亮色模式
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - toc.follow
+
+plugins:
+  - search:
+      lang: zh
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.mark
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra:
+  social:
+    - icon: fontawesome/brands/bilibili
+      link: https://space.bilibili.com/81597119
+
+nav:
+  - 首页: index.md
+  - 📖 卷一 世界历史: tarkov-encyclopedia-01-history_zh.md
+  - ⚔️ 卷二 派系势力: tarkov-encyclopedia-02-factions_zh.md
+  - 🏪 卷三 商人档案: tarkov-encyclopedia-03-traders_zh.md
+  - 💀 卷四 Boss 图鉴: tarkov-encyclopedia-04-bosses_zh.md
+  - 🗺️ 卷五 地图档案: tarkov-encyclopedia-05-maps_zh.md
+  - 📚 卷六 词条附录: tarkov-encyclopedia-06-appendix_zh.md
+  - 🎭 卷七 剧情主线: tarkov-encyclopedia-07-story_zh.md
+  - 🎓 配套手册: https://tarkov-pve-guide.pages.dev/
