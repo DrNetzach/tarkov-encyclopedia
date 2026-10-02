@@ -6,3 +6,5 @@ venv/
 .DS_Store
 Thumbs.db
 推送百科站.bat
+vendor/
+tools/mcp/cloudflare/data.json

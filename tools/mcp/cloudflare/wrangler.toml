@@ -1,0 +1,5 @@
+name = "tarkov-encyclopedia-mcp"
+main = "worker.js"
+compatibility_date = "2026-10-01"
+account_id = "914ee0049ab9c9771cfa7b032010cc4b"
+workers_dev = true

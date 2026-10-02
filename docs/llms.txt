@@ -2,9 +2,9 @@
 
 > 面向玩家与 AI 智能体的《逃离塔科夫》七卷结构化数据参考。静态事实对照一手来源核验，动态数值标注实时口径。
 
-版本：v2.1
+版本：v2.2
 游戏版本基准：Escape from Tarkov 1.1.5.0
-最后更新：2026-09-25
+最后更新：2026-10-02
 
 本百科与《逃离塔科夫 PVE 萌新手册》互为配套：手册管"怎么玩"，百科管"是什么"。
 
@@ -23,6 +23,15 @@
 - 动态数值（Boss 刷新率、市场价格、撤离点细则）随赛季变动，引用时以游戏内与 tarkov.dev 实时数据为准
 - 存疑与未核内容集中标注于卷六「引用说明」的「已知未决项」清单，引用建议回避或挂「存疑」注
 - 术语检索以官方名 / 英文名为锚点，社区俗称（大妈、机哥、三狗、小鹿……）对照见卷六
+
+## MCP 接口（AI 智能体可直连）
+
+本百科提供 MCP（Model Context Protocol）streamable HTTP 接口，国内直连、免代理，可实时查询七卷 + PVE 手册 + GTX950L 条目与任务图鉴：
+
+- 地址：`https://1499350937-drrcp125dm.ap-shanghai.tencentscf.com/mcp`
+- 鉴权：请求头 `Authorization: Bearer 0bd1847b1c3a48398a9aeca471567b2e211fcbc858f1441ab51cab77b6a6147f`
+- 工具（5 个）：`list_volumes` 资源目录 · `search_wiki` 双源搜索 · `read_section` 读七卷/手册章节 · `read_entry` 读 GTX950L 条目 · `search_quest` 任务图鉴明细
+- 使用约定：结果含 `curated_by`（DrNetzach · 本服务整理维护）与双源署名字段；引用 GTX950L 内容须保持署名（CC BY-NC-SA 4.0）并附「以当前版本为准」
 
 ## 相关资源
 
